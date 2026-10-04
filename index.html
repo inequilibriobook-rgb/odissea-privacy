@@ -1,0 +1,315 @@
+<!doctype html>
+<title>The Odyssey — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF8F1;
+    --ink:#1E2A32;
+    --ink-soft:#5B6570;
+    --navy:#073B4C;
+    --navy-deep:#052732;
+    --cream:#FFF7E8;
+    --gold:#8C6A26;
+    --gold-bright:#C59A32;
+    --teal:#3F9496;
+    --line:#E4D9C2;
+    --shadow:rgba(7,59,76,.10);
+    --focus:#0B6E86;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0B2530;
+      --ink:#EFE7D4;
+      --ink-soft:#AEBBBD;
+      --navy:#0E3F50;
+      --navy-deep:#052027;
+      --cream:#FFF7E8;
+      --gold:#E0B15C;
+      --gold-bright:#D9AA5F;
+      --teal:#7FD1D3;
+      --line:#1D3A44;
+      --shadow:rgba(0,0,0,.4);
+      --focus:#7FD1D3;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0B2530;
+    --ink:#EFE7D4;
+    --ink-soft:#AEBBBD;
+    --navy:#0E3F50;
+    --navy-deep:#052027;
+    --cream:#FFF7E8;
+    --gold:#E0B15C;
+    --gold-bright:#D9AA5F;
+    --teal:#7FD1D3;
+    --line:#1D3A44;
+    --shadow:rgba(0,0,0,.4);
+    --focus:#7FD1D3;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+    font-size:17px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{
+    font-family:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+    text-wrap:balance;
+    color:var(--ink);
+  }
+
+  /* ---------- header ---------- */
+  header.masthead{
+    background:linear-gradient(180deg,var(--navy),var(--navy-deep));
+    color:var(--cream);
+    padding:2.4rem 1.4rem 0;
+  }
+  .masthead-inner{
+    max-width:640px;
+    margin:0 auto;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:1rem;
+  }
+  .mark{display:flex; align-items:center; gap:.85rem}
+  .mark svg{width:40px;height:40px;flex:none}
+  .mark-text{display:flex;flex-direction:column;line-height:1.15}
+  .mark-text .name{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-weight:600;
+    font-size:1.5rem;
+    letter-spacing:.02em;
+  }
+  .mark-text .kind{
+    font-size:.72rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold-bright);
+    margin-top:.15rem;
+  }
+  nav.langs{
+    display:flex;
+    gap:.5rem;
+    padding-top:.2rem;
+  }
+  nav.langs a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:2.4rem;
+    height:2.4rem;
+    border-radius:999px;
+    border:1.5px solid rgba(255,247,232,.35);
+    color:var(--cream);
+    text-decoration:none;
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-weight:600;
+    font-size:.85rem;
+    letter-spacing:.04em;
+    transition:background .15s ease, border-color .15s ease, transform .1s ease;
+  }
+  nav.langs a:hover{border-color:var(--gold-bright); transform:translateY(-1px)}
+  nav.langs a:focus-visible{outline:2px solid var(--gold-bright); outline-offset:2px}
+  nav.langs a[data-current]{background:var(--gold-bright); border-color:var(--gold-bright); color:var(--navy-deep)}
+
+  /* meander — the running Greek key, the one border every reader of this
+     particular poem will recognise from a vase before they recognise it
+     from anywhere else. One strip, not a wallpaper. */
+  .meander{
+    max-width:640px;
+    margin:1.6rem auto 0;
+    padding:0 1.4rem;
+  }
+  .meander svg{display:block; width:100%; height:14px; color:var(--gold-bright); opacity:.85}
+  .masthead-tagline{
+    max-width:640px;
+    margin:1.1rem auto 1.7rem;
+    padding:0 1.4rem;
+    font-family:"Source Serif 4",Georgia,serif;
+    font-style:italic;
+    color:rgba(255,247,232,.78);
+    font-size:.98rem;
+  }
+
+  /* ---------- body ---------- */
+  main{max-width:640px; margin:0 auto; padding:2.6rem 1.4rem 4rem}
+  .updated{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:.85rem;
+    letter-spacing:.03em;
+    color:var(--ink-soft);
+    text-transform:uppercase;
+    margin-bottom:2.6rem;
+  }
+
+  section.lang{scroll-margin-top:1.5rem}
+  section.lang + section.lang{
+    margin-top:3.4rem;
+    padding-top:3.2rem;
+    border-top:1px solid var(--line);
+  }
+
+  h1{font-size:1.9rem; font-weight:600; margin:0 0 .3rem}
+  .lead{color:var(--ink-soft); font-style:italic; margin:0 0 2rem; font-size:1.02rem}
+
+  article h2{
+    font-size:1.05rem;
+    font-weight:600;
+    letter-spacing:.01em;
+    margin:2.1rem 0 .6rem;
+    display:flex;
+    align-items:baseline;
+    gap:.6rem;
+  }
+  article h2::before{
+    content:"";
+    width:.5rem;
+    height:.5rem;
+    border-radius:999px;
+    background:var(--gold-bright);
+    flex:none;
+    transform:translateY(-.15rem);
+  }
+  article p{margin:0 0 1rem; max-width:64ch}
+  article p:last-child{margin-bottom:0}
+  a{color:var(--focus)}
+  a:visited{color:var(--focus)}
+
+  .contact-card{
+    margin-top:2.4rem;
+    padding:1.2rem 1.3rem;
+    border:1px solid var(--line);
+    border-radius:10px;
+    background:color-mix(in srgb, var(--navy) 5%, transparent);
+    box-shadow:0 1px 0 var(--shadow);
+  }
+  .contact-card p{margin:0}
+  .contact-card .label{
+    font-size:.72rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:block;
+    margin-bottom:.35rem;
+  }
+
+  footer{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 1.4rem 3rem;
+    color:var(--ink-soft);
+    font-size:.82rem;
+  }
+  footer .rule{height:1px; background:var(--line); margin:0 0 1.4rem}
+
+  @media (max-width:480px){
+    h1{font-size:1.6rem}
+    .mark-text .name{font-size:1.25rem}
+  }
+</style>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="mark">
+      <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#FFF7E8" d="M52,22 L57,22 L57,72 L52,72 Z"/>
+        <path fill="#C59A32" d="M58,27 L58,59 L82,59 Z"/>
+        <path fill="#66C7C9" d="M50,34 L50,59 L31,59 Z"/>
+        <path fill="#FFF7E8" d="M27,66 C36,72 72,72 84,66 C79,82 36,84 27,66 Z"/>
+        <path fill="#C59A32" d="M34,77 C46,82 67,82 77,77 C66,89 44,89 34,77 Z"/>
+      </svg>
+      <div class="mark-text">
+        <span class="name">The Odyssey</span>
+        <span class="kind">Privacy &amp; data</span>
+      </div>
+    </div>
+    <nav class="langs" aria-label="Choose language section">
+      <a href="#it" data-current>IT</a>
+      <a href="#en">EN</a>
+    </nav>
+  </div>
+
+  <div class="meander" aria-hidden="true">
+    <svg viewBox="0 0 640 14" preserveAspectRatio="none">
+      <path d="M0,1 H639 M0,1 V13 H14 V7 H28 V13 H42 V1 M42,1 H70 V13 H84 V7 H98 V13 H112 V1 M112,1 H140 V13 H154 V7 H168 V13 H182 V1 M182,1 H210 V13 H224 V7 H238 V13 H252 V1 M252,1 H280 V13 H294 V7 H308 V13 H322 V1 M322,1 H350 V13 H364 V7 H378 V13 H392 V1 M392,1 H420 V13 H434 V7 H448 V13 H462 V1 M462,1 H490 V13 H504 V7 H518 V13 H532 V1 M532,1 H560 V13 H574 V7 H588 V13 H602 V1 M602,1 H639" stroke="currentColor" stroke-width="1.4" fill="none"/>
+    </svg>
+  </div>
+  <p class="masthead-tagline">A guided reading of Homer’s poem — and, on this one page, the plain account of what the app does with your data.</p>
+</header>
+
+<main>
+  <p class="updated">Last updated · Ultimo aggiornamento — 4 October 2026 / 4 ottobre 2026</p>
+
+  <section class="lang" id="it" lang="it">
+    <h1>Informativa sulla privacy</h1>
+    <p class="lead">Risposta breve: <strong>nessun dato personale viene raccolto, inviato o condiviso.</strong> Il resto di questa pagina spiega perché.</p>
+
+    <article>
+      <h2>Che cosa l’app non raccoglie</h2>
+      <p><strong>The Odyssey</strong> è un’app di lettura guidata dell’<em>Odissea</em>, pubblicata da Igor De Guglielmo. Non chiede la creazione di un account, non richiede nome, email, posizione, contatti, foto o altre informazioni personali, e non contiene strumenti di analisi, pubblicità o profilazione. Nessun dato lascia il tuo dispositivo verso nostri sistemi, perché non esistono nostri sistemi che li ricevano.</p>
+
+      <h2>Che cosa resta sul dispositivo</h2>
+      <p>L’app salva sul telefono, e solo lì, il tuo avanzamento nella lettura: episodi letti, risposte date, stelle e carte conquistate, lingua scelta. Servono a riprendere da dove eri rimasto. Si cancellano disinstallando l’app o cancellandone i dati dalle impostazioni di Android. Se hai attivato il backup di Android, questi dati possono essere inclusi nel backup del tuo account Google secondo le impostazioni del tuo dispositivo: è una funzione di Android gestita da Google, non da noi.</p>
+
+      <h2>Connessione a internet</h2>
+      <p>La rete serve a una cosa sola: scaricare da Google Play, quando le richiedi, le immagini delle carte da collezione — non incluse nell’app per non appesantirla. Il download passa dal servizio Google Play del tuo dispositivo, soggetto alla <a href="https://policies.google.com/privacy">informativa sulla privacy di Google</a>. Da questo passaggio non riceviamo alcuna informazione.</p>
+
+      <h2>Acquisti</h2>
+      <p>Questa app non contiene acquisti né pagamenti. In futuro sarà disponibile su Google Play una versione completa, distribuita come app separata: se la scarichi, il pagamento sarà gestito interamente da Google Play e noi non vediamo né conserviamo dati di pagamento.</p>
+
+      <h2>Minori</h2>
+      <p>L’app è adatta a lettori di ogni età, ma è destinata a un pubblico dai 13 anni in su. Non raccogliendo dati, non tratta consapevolmente dati di minori.</p>
+
+      <h2>Modifiche</h2>
+      <p>Se questa informativa cambierà, la data in alto verrà aggiornata e la nuova versione pubblicata a questo stesso indirizzo.</p>
+
+      <div class="contact-card">
+        <p><span class="label">Contatti</span><a href="mailto:artezenit@gmail.com">artezenit@gmail.com</a></p>
+      </div>
+    </article>
+  </section>
+
+  <section class="lang" id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="lead">Short answer: <strong>no personal data is collected, sent or shared.</strong> The rest of this page explains why.</p>
+
+    <article>
+      <h2>What the app does not collect</h2>
+      <p><strong>The Odyssey</strong> is a guided-reading app for Homer’s <em>Odyssey</em>, published by Igor De Guglielmo. It does not ask you to create an account, and does not request your name, email, location, contacts, photos or any other personal information. It contains no analytics, advertising or profiling tools. No data leaves your device to our systems, because there are no systems of ours to receive it.</p>
+
+      <h2>What stays on your device</h2>
+      <p>The app stores on your phone, and only there, your reading progress: episodes read, answers given, stars and cards earned, chosen language. This lets you pick up where you left off. It is deleted when you uninstall the app or clear its data in Android settings. If you have enabled Android backup, this data may be included in your Google account backup according to your device settings — an Android feature operated by Google, not by us.</p>
+
+      <h2>Internet connection</h2>
+      <p>The network is used for one thing only: downloading from Google Play, when you ask for them, the images of the collectible cards — not bundled with the app to keep it light. This download goes through your device’s Google Play service, subject to <a href="https://policies.google.com/privacy">Google’s privacy policy</a>. We receive no information from this process.</p>
+
+      <h2>Purchases</h2>
+      <p>This app contains no purchases or payments. A complete version, distributed as a separate app, will be available on Google Play in the future: if you download it, the payment will be handled entirely by Google Play and we do not see or store any payment data.</p>
+
+      <h2>Children</h2>
+      <p>The app is suitable for readers of all ages but is intended for an audience aged 13 and over. Since it collects no data, it does not knowingly process data of minors.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the date at the top will be updated and the new version published at this same address.</p>
+
+      <div class="contact-card">
+        <p><span class="label">Contact</span><a href="mailto:artezenit@gmail.com">artezenit@gmail.com</a></p>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="rule"></div>
+  <p>The Odyssey · Privacy Policy — published for Google Play Console.</p>
+</footer>
